@@ -10,12 +10,12 @@
 def str_comp(str1, str2):
     if not isinstance(str1, str) or not isinstance(str2, str):
         return 0
+    elif len(str1) != len(str2) and str2 == 'learn':
+        return 3
+    elif str1 != str2 and len(str1) > len(str2):
+        return 2
     elif str1 == str2:
         return 1
-    elif len(str1) > len(str2):
-        return 2
-    elif str1 != str2 and str2 == 'learn':
-        return 3
     else:
         return 'Ни одно условие не выполнено'
 
@@ -23,4 +23,4 @@ print(str_comp(5, 'test'))
 print(str_comp('test', 'test'))
 print(str_comp('teeeest', 'test'))
 print(str_comp('test', 'learn'))
-
+print(str_comp('slavaukraine!', 'learn'))
