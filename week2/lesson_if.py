@@ -12,9 +12,9 @@ def what_to_do(arg):
     arg = abs(age)
     if arg < 6:
         return 'Тебе в детсад'
-    elif 6 <= arg <= 17:
+    elif arg < 17:
         return 'Тебе в школу'
-    elif 18 <= arg <= 23:
+    elif arg < 23:
         return 'Тебе в ВУЗ'
     else:
         return 'Пора работать'
