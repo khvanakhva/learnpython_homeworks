@@ -18,3 +18,5 @@ for klass in school_scores:
     students += len(klass["scores"])
 
 print(f'Средний бал в школе составляет {points/students}')
+
+

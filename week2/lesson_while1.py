@@ -8,4 +8,4 @@ def hello_user():
         if user_say == 'Хорошо':
             break
 
-hello_user()
+print(hello_user())
